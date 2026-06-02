@@ -60,6 +60,68 @@
             color: #666;
             margin-top: 10px;
         }
+
+         .players-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-family: Arial, sans-serif;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .players-table thead tr {
+            background: linear-gradient(135deg, #1a472a, #2e7d32);
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+        .players-table th, .players-table td {
+            padding: 14px 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        .players-table tbody tr {
+            transition: background 0.2s ease;
+        }
+        .players-table tbody tr:nth-child(even) {
+            background-color: #f9f2e0;
+        }
+        .players-table tbody tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+        .players-table tbody tr:hover {
+            background-color: #ffecd6;
+            cursor: pointer;
+        }
+        .jersey-number {
+            font-weight: bold;
+            background-color: #f5a623;
+            color: #1e2a1f;
+            display: inline-block;
+            width: 32px;
+            border-radius: 50%;
+            line-height: 32px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .position-badge {
+            background: #2c3e2f;
+            color: #ffdd99;
+            padding: 4px 12px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-block;
+        }
+        caption {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #b64926;
+            text-align: center;
+            caption-side: top;
+        }
     </style>
 </head>
 <body>
@@ -114,6 +176,75 @@
             allowfullscreen>
         </iframe>
     </div>
+
+    <!-- ======================= -->
+<!-- BASKETBALL ROSTER TABLE -->
+<!-- ======================= -->
+<table class="players-table">
+    <caption>🏀 NURU BASKETBALL CLUB - OFFICIAL ROSTER 🏀</caption>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>PLAYER NAME</th>
+            <th>POSITION</th>
+            <th>JERSEY NUMBER</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Player 1 -->
+        <tr>
+            <td>1</td>
+            <td><strong>Michael Odhiambo</strong></td>
+            <td><span class="position-badge">Point Guard (PG)</span></td>
+            <td><span class="jersey-number">3</span></td>
+        </tr>
+        <!-- Player 2 -->
+        <tr>
+            <td>2</td>
+            <td><strong>James Mwangi</strong></td>
+            <td><span class="position-badge">Shooting Guard (SG)</span></td>
+            <td><span class="jersey-number">7</span></td>
+        </tr>
+        <!-- Player 3 -->
+        <tr>
+            <td>3</td>
+            <td><strong>Brian Otieno</strong></td>
+            <td><span class="position-badge">Small Forward (SF)</span></td>
+            <td><span class="jersey-number">10</span></td>
+        </tr>
+        <!-- Player 4 -->
+        <tr>
+            <td>4</td>
+            <td><strong>Victor Wanyama</strong></td>
+            <td><span class="position-badge">Power Forward (PF)</span></td>
+            <td><span class="jersey-number">21</span></td>
+        </tr>
+        <!-- Player 5 -->
+        <tr>
+            <td>5</td>
+            <td><strong>Collins Kipchoge</strong></td>
+            <td><span class="position-badge">Center (C)</span></td>
+            <td><span class="jersey-number">15</span></td>
+        </tr>
+        <!-- Player 6 -->
+        <tr>
+            <td>6</td>
+            <td><strong>Emmanuel Achieng</strong></td>
+            <td><span class="position-badge">Point Guard (PG)</span></td>
+            <td><span class="jersey-number">0</span></td>
+        </tr>
+        <!-- Player 7 -->
+        <tr>
+            <td>7</td>
+            <td><strong>Dennis Oluoch</strong></td>
+            <td><span class="position-badge">Shooting Guard (SG)</span></td>
+            <td><span class="jersey-number">23</span></td>
+        </tr>
+    </tbody>
+</table>
+
+
+   
     
     <p style="text-align:center; color:#666; margin-top:20px;">
         Nuru Basketball Club — First team to qualify for Basketball African League! 
